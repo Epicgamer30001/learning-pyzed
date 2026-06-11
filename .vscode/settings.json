@@ -1,0 +1,17 @@
+{
+    // Turn OFF inline "ghost text" suggestions (the gray predicted line ahead of the cursor)
+    "editor.inlineSuggest.enabled": false,
+
+    // Turn OFF GitHub Copilot inline completions (if Copilot is installed)
+    "github.copilot.enable": {
+        "*": false
+    },
+
+    // Keep the normal IntelliSense dropdown (variable/method autocomplete) ON
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": true
+}

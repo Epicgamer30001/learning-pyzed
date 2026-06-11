@@ -19,8 +19,9 @@ def main():
     
     #get camera info 
     zed_serial = zed.get_camera_information().serial_number
+    zed_model = zed.get_camera_information().camera_model
     for i in range(10000):
-        print(f"Yooooooo serial number ->  {zed_serial}")
+        print(f"Yooooooo serial number ->  {zed_serial}, {zed_model}")
 
 
     time.sleep(3)
