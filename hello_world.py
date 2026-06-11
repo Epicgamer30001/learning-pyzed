@@ -14,11 +14,14 @@ def main():
     #open camera with parameters specified
     err = zed.open(init_params)
     if err != sl.ERROR_CODE.SUCCESS:
+        print("Camera Open : " + repr(err)+"Exit Program.")
         exit(1)
     
     #get camera info 
     zed_serial = zed.get_camera_information().serial_number
-    print(f"Yooooooo serial number ->:  {zed_serial}")
+    for i in range(10000):
+        print(f"Yooooooo serial number ->  {zed_serial}")
+
 
     time.sleep(3)
 
